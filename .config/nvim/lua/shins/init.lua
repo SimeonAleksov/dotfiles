@@ -1,0 +1,6 @@
+require'shins.plugins'
+require'shins.mappings'
+require'shins.lsp'
+require'shins.telescope'
+require'shins.compe'
+require'shins.treesitter'
