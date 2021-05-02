@@ -9,16 +9,14 @@ vim.cmd 'autocmd BufWritePre *.py execute ":Black"'
 vim.cmd 'autocmd BufWritePre *.py execute ":ALEFix isort"'
 vim.cmd 'augroup END'
 vim.cmd 'set nohlsearch'
+vim.cmd 'set clipboard+=unnamedplus'
+
 vim.g.mapleader = ' '
 
 vim.o.termguicolors = true
 vim.wo.relativenumber = true
 vim.o.relativenumber = true
-
-require('colorbuddy').colorscheme('gruvbuddy')
-
 vim.g.airline_theme = 'base16'
-vim.g.github_enterprise_urls = { 'https://github.prod.hulu.com' }
 vim.g.airline_powerline_fonts = 1
 vim.g['airline#extensions#tabline#enabled'] = 1
 vim.g['airline#extensions#tabline#buffer_min_count'] = 2
@@ -55,5 +53,5 @@ vim.wo.number = true
 vim.wo.numberwidth = 2
 vim.o.laststatus = 2
 vim.o.scrolloff = 5
-
+require('colorbuddy').colorscheme('gruvbuddy')
 require'shins'
