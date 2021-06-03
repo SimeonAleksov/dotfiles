@@ -1,1 +1,1 @@
-![image](https://raw.githubusercontent.com/SimeonAleksov/dotfiles/master/Desktop/nvim.png)
+![image](https://i.imgur.com/ne4bCNV.png)
