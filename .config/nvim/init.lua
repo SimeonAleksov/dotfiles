@@ -13,6 +13,7 @@ vim.cmd 'set clipboard+=unnamedplus'
 
 vim.g.mapleader = ' '
 
+
 vim.o.termguicolors = true
 vim.wo.relativenumber = true
 vim.o.relativenumber = true
@@ -40,8 +41,8 @@ vim.o.hidden = true
 vim.o.completeopt = 'menuone,noinsert,noselect'
 vim.o.autoindent = true
 vim.o.smartindent = true
-vim.o.tabstop = 2
-vim.o.softtabstop = 2
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.guicursor = '' 
@@ -53,5 +54,6 @@ vim.wo.number = true
 vim.wo.numberwidth = 2
 vim.o.laststatus = 2
 vim.o.scrolloff = 5
-require('colorbuddy').colorscheme('gruvbuddy')
+
+require('colorbuddy').colorscheme('gloombuddy')
 require'shins'

@@ -36,16 +36,18 @@ return packer.startup(function()
     use 'tpope/vim-fugitive'
     use 'kevinhwang91/nvim-bqf'
     use { 'tpope/vim-rhubarb', requires = { 'tpope/vim-fugitive' } }
-
+    -- use 'fatih/vim-go'
+    
     -- LSP
     use 'neovim/nvim-lspconfig'
     use 'anott03/nvim-lspinstall'
     use 'hrsh7th/nvim-compe'
-    -- use 'dense-analysis/ale'
+    use 'dense-analysis/ale'
     use 'nathunsmitty/nvim-ale-diagnostic'
     use 'glepnir/lspsaga.nvim'
 
     -- Theme/Syntax
+    use 'ghifarit53/tokyonight-vim'
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
