@@ -1,0 +1,8 @@
+require 'shins.plugins'
+require 'shins.cmp'
+require 'shins.lsp'
+require 'shins.telescope'
+require 'shins.treesitter'
+require 'shins.lualine'
+require 'shins.bufferline'
+require 'shins.mappings'
