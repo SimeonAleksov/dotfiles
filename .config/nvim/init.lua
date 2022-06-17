@@ -13,6 +13,9 @@ vim.cmd 'set clipboard+=unnamedplus'
 vim.g.mapleader = ' '
 
 
+vim.g.python3_host_prog = "/home/shins/.pyenv/versions/3.10.5/bin/python3.10"
+vim.g.loaded_perl_provider = 0
+
 vim.o.termguicolors = true
 vim.wo.relativenumber = true
 vim.o.relativenumber = true
@@ -44,7 +47,7 @@ vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
-vim.o.guicursor = '' 
+vim.o.guicursor = ''
 vim.wo.signcolumn = 'yes'
 vim.wo.wrap = true
 vim.wo.cursorcolumn = true

@@ -1,5 +1,6 @@
 local lspconfig = require 'lspconfig'
 
+require("nvim-lsp-installer").setup {}
 -- Global diagnostic config
 vim.diagnostic.config({
   underline = { severity_limit = "Error" },
@@ -181,3 +182,4 @@ lspconfig.tsserver.setup {
 }
 
 lspconfig.gopls.setup(default_config)
+lspconfig.pyright.setup(default_config)

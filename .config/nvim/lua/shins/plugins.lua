@@ -36,8 +36,6 @@ packer.startup(function(use)
   use { 'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons' }
 
   -- LSP
-  use 'neovim/nvim-lspconfig'
-  use 'creativenull/efmls-configs-nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
 
   -- Autocompletion and Snippets
@@ -60,7 +58,24 @@ packer.startup(function(use)
   use 'princejoogie/tailwind-highlight.nvim'
   use 'tjdevries/colorbuddy.nvim'
   use 'tjdevries/gruvbuddy.nvim'
-  use 'bkegley/gloombuddy' 
+  use 'neovim/nvim-lspconfig'
+  use 'bkegley/gloombuddy'
+  use {
+      {
+          "williamboman/nvim-lsp-installer",
+          config = function ()
+              require("nvim-lsp-installer").setup {}
+          end
+      },
+      {
+          after = "nvim-lsp-installer",
+          config = function()
+              local lspconfig = require("lspconfig")
+              lspconfig.sumneko_lua.setup {}
+              --- ...
+          end
+      }
+  }
 end)
 
 if is_first_time then
